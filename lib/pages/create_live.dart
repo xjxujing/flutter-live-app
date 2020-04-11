@@ -15,6 +15,20 @@ class _CreateLiveState extends State<CreateLive> {
         backgroundColor: Color.fromRGBO(250, 82, 75, 1),
         elevation: 0,
       ),
+      body: Container(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, "/livePage");
+          },
+          textColor: Colors.white,
+          color: Color.fromRGBO(250, 82, 75, 1),
+          child: Text(
+            '创建直播',
+            style: TextStyle(fontSize: 20)
+          ),
+        ),
+      )
+
     );
   }
 }
